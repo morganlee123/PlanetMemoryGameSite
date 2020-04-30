@@ -347,6 +347,16 @@ div.desc {
   color:#fff;
 }
 
+div.scrollable {
+		 height:66.67vh;
+        width: 100%;
+        overflow: auto;
+        float: left;
+        position: relative;
+        margin-left: -5px;
+}
+
+
 
 
 /** Matching Cards **/
