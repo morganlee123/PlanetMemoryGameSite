@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Planet Matcher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/MemoryGame.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <section id="memory--settings-modal" class="valign-table modal show">
+      <div class="valign-cell">
+  <div class="responsive">
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/earth.jpg">
+				<img src="./images/planets/earth.jpg" alt="Earth" width="600" height="400">
+			  </a>
+			  <div class="desc">Our beautiful planet Earth. Home to various types of life</div>
+			</div></div>
+<div class="responsive">
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/jupiter.jpg">
+				<img src="./images/planets/jupiter.jpg" alt="Jupiter" width="600" height="400">
+			  </a>
+			  <div class="desc">The massive gas giant Jupiter. See that big red spot? That's a storm that's been going on for at least 350 years!</div>
+			</div>
+</div>
+<div class="responsive">
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/saturn.jpg">
+				<img src="./images/planets/saturn.jpg" alt="Saturn" width="600" height="400">
+			  </a>
+			  <div class="desc">Saturn, the 5th planet from the Sun and the second-largest. See its beautiful rings?</div>
+			</div>
+</div>
+
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/mars.jpg">
+				<img src="./images/planets/mars.jpg" alt="Mars" width="600" height="400">
+			  </a>
+			  <div class="desc">Mars. Elon Musk's dream vacation destination. This planet was named after the Roman god of war</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/callisto.jpg">
+				<img src="./images/planets/callisto.jpg" alt="Callisto" width="600" height="400">
+			  </a>
+			  <div class="desc">Callisto is the second largest moon of Jupiter. Callisto is approximately the same diameter as Mercury but only 1/3 the mass. How interesting</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/eris.jpg">
+				<img src="./images/planets/eris.jpg" alt="Eris" width="600" height="400">
+			  </a>
+			  <div class="desc">Eris is the second largest known dwarf planet in the solar system. Eris never gets the same attention Pluto does. Poor Eris.</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/europa.jpg">
+				<img src="./images/planets/europa.jpg" alt="Europa" width="600" height="400">
+			  </a>
+			  <div class="desc">Europa is the smallest of the moons orbiting Jupiter, it is slightly smaller than our moon oribiting Earth</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/ganymede.jpg">
+				<img src="./images/planets/ganymede.jpg" alt="Ganymede" width="600" height="400">
+			  </a>
+			  <div class="desc">Ganymede is the largest moon orbiting Jupiter. In fact its slightly larger than Mercury but since it orbits Jupiter it is still classified as a moon</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/iss.jpg">
+				<img src="./images/planets/iss.jpg" alt="ISS" width="600" height="400">
+			  </a>
+			  <div class="desc">The International Space Station. Orbits in low Earth orbit and is a joint project between multiple governments. Lots of cool low gravity science happens here!</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/mercury.jpg">
+				<img src="./images/planets/mercury.jpg" alt="Mercury" width="600" height="400">
+			  </a>
+			  <div class="desc">Mercury is the smallest and innermost planet in the solar system. A year on Mercury only lasts 88 Earth days. Wow</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/neptune.jpg">
+				<img src="./images/planets/neptune.jpg" alt="Neptune" width="600" height="400">
+			  </a>
+			  <div class="desc">Neptune is a big dense massive planet. In fact Neptne is 17 times as massive as Earth</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/pluto.jpg">
+				<img src="./images/planets/pluto.jpg" alt="Pluto" width="600" height="400">
+			  </a>
+			  <div class="desc">Pluto, everyones favorite dwarf planet (or planet if you're born before 2006)</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/titan.jpg">
+				<img src="./images/planets/titan.jpg" alt="Titan" width="600" height="400">
+			  </a>
+			  <div class="desc">Titan, a moon around Saturn which is covered in a thick atmosphere that some consider to be similar to that of early Earth</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/uranus.jpg">
+				<img src="./images/planets/uranus.jpg" alt="Uranus" width="600" height="400">
+			  </a>
+			  <div class="desc">Uranus, the 7th planet from the Sun. A large ice giant planet</div>
+			</div>
+			
+			<div class="gallery">
+			  <a target="_blank" href="./images/planets/venus.jpg">
+				<img src="./images/planets/venus.jpg" alt="Venus" width="600" height="400">
+			  </a>
+			  <div class="desc">Venus, the second planet from the Sun. Named after the Roman goddess of love and beauty. Stunning!</div>
+			</div>
+			
+  
+      </div>
+    </section>
+    <section id="memory--end-game-modal" class="valign-table modal">
+      <div class="valign-cell">
+        <div class="wrapper">
+          <h2 id="memory--end-game-message"></h2>
+          <h3 id="memory--end-game-score"></h3>
+        </div>
+      </div>
+    </section>
+    <section id="memory--app-container">
+      <ul id="memory--cards">
+      </ul>
+    </section>
+    <section class="memory--menu-bar">
+      <div class="inner">
+	  
+		<div class="left">
+			<button class="button" onclick="window.location.href = './index.html';">Planet Matcher</button>
+			</div></div>
+			
+			<div class="inner"><h2 class="memory--settings-label">This Website Developed by Morgan Sandler. Images credit: NASA et al.</h2></div>
+			<div class="inner">
+			<div class="right">
+			<button class="button" onclick="window.location.href = './about.html';">Learn</button>
+		</div></div>
+    </section>
+    <script src="js/BrowserInterface.js" type="text/javascript"></script>
+  </body>
+</html>
